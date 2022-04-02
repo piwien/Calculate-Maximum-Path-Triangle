@@ -7,8 +7,6 @@ def isprime(number):
         if number%n==0:
             return False   
     return True
-    
-# print(isprime(11)) // for prime check
 
 def maxPathSumTriangle(arr):
     newlist = [row[:] for row in arr]

@@ -29,8 +29,4 @@ with open("input.txt") as f:
     arr = []
     for line in f:
         arr.append(list(map(int, line.split(" "))))
-    print(arr)
-    print(maxPathSumTriangle(arr))
-    print(arr)
-    print(len(arr))
-    print(range(len(arr)))
+    print("Maximum Path is: " maxPathSumTriangle(arr))

@@ -14,7 +14,7 @@ def maxPathSumTriangle(arr):
     newlist = [row[:] for row in arr]
     for row in range(len(arr)-2, -1, -1):
         for col in range(len(arr[row])):
-            if (isprime(newlist[row][col]) or (isprime(newlist[row+1][col]) and isprime(newlist[row+1][col+1]))):
+            if (isprime(newlist[row][col]) or (isprime(newlist[row+1][col]) and isprime(newlist[row+1][col+1]))): #All numbers prime number
                 continue
             elif (isprime(newlist[row+1][col]) == False and isprime(newlist[row+1][col+1]) == False): #Both numbers not prime 
                  arr[row][col] += max(arr[row+1][col], arr[row+1][col+1])
